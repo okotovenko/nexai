@@ -1000,7 +1000,7 @@
         const selectValue = currentSelect.value;
         const valueContainer = selectBlock.querySelector(".select__value");
         if (selectValue === "Other") {
-            valueContainer.innerHTML = `\n\t\t\t\t<input\n\t\t\t\t\ttype="text"\n\t\t\t\t\tclass="select__custom-input"\n\t\t\t\t\tplaceholder="Ohter:"\n\t\t\t\t>\n\t\t\t`;
+            valueContainer.innerHTML = `\n\t\t\t\t<input\n\t\t\t\t\ttype="text"\n\t\t\t\t\tclass="select__custom-input"\n\t\t\t\t\tplaceholder="Ohter: Type name"\n\t\t\t\t>\n\t\t\t`;
             const input = valueContainer.querySelector("input");
             setTimeout((() => {
                 input.focus();

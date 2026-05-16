@@ -134,6 +134,9 @@ body {
   line-height: 150%;
   padding: .5rem 1rem
 }
+.form label.form-label>span>span {
+  color: #f53b00
+}
 .form label.form-label.form-label-select {
   order: 3
 }
