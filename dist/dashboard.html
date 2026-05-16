@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>dashboard</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260516213916">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<div class="preloader">
+		<svg class="preloader__image" role="img" viewBox="0 0 512 512">
+			<path fill="#147CEF" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+			</path>
+		</svg>
+	</div>
+	<div class="wrapper">
+		<div class="page-blur"></div>
+		<header class="header">
+			<div class="header__container">
+				<div class="header__box">
+					<a href='/' class='header__logo'><img src='img/logo.webp' alt='logo'></a>
+					<div class='header__menu menu'>
+						<button type='button' class='menu__icon icon-menu'> <span></span></button>
+						<nav class='menu__body'>
+							<ul class='menu__list'>
+								<li class='menu__item'><a href='/' class='menu__link'>Home</a></li>
+								<li class='menu__item'><a href='about.html' class='menu__link'>About</a></li>
+								<li class='menu__item'><a href='dashboard.html' class='menu__link'>Dashboard</a></li>
+							</ul>
+						</nav>
+					</div>
+					<button type='button' class="button button--join" data-da=".menu__body,768,1" data-popup="#popup">Join Waitlist
+						<img src="img/icons/join.svg" alt="join"></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="dashboard">
+				<div class="dashboard__container">
+					<div class="dashboard__bg">
+						<svg viewBox="0 0 1067 1095" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" d="M1056.74 10.5068C1013.83 -31.8148 844.128 57.5238 677.712 210.05C614.088 268.364 560.155 327.472 520.201 380.608C460.506 459.997 362.19 551.387 277.655 603.54C236.564 628.891 195.117 661.23 156.116 699.587C14.9844 838.387 -40.6861 1003.43 31.7727 1068.21C104.232 1133 277.381 1073 418.512 934.2C559.643 795.401 615.314 630.361 542.855 565.575C541.195 564.091 541.637 561.32 543.724 560.544C618.822 532.627 726.648 460.906 833.129 363.313C999.545 210.786 1099.66 52.829 1056.74 10.5068Z" fill="url(#paint0_linear_31_6605)" />
+							<defs>
+								<linearGradient id="paint0_linear_31_6605" x1="854.718" y1="42.2765" x2="264.116" y2="996.999" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#147CEF" />
+									<stop offset="1" stop-color="#20F038" />
+								</linearGradient>
+							</defs>
+						</svg>
+					</div>
+					<h1 class="page-title">Dashboard</h1>
+					<div class="dashboard__box">
+						<div class="dashboard__top">
+							<div class="dashboard__item">
+								<div class="dashboard__row">
+									<p>Today’s P&L</p>
+									<img src="img/icons/trending-up-white.svg" alt="trending-up">
+								</div>
+								<h4>+$1,247</h4>
+								<span>+12.4%</span>
+							</div>
+							<div class="dashboard__item">
+								<div class="dashboard__row">
+									<p>Win Rate</p>
+									<img src="img/icons/target.svg" alt="target">
+								</div>
+								<h4>68%</h4>
+								<span>+3.2%</span>
+							</div>
+							<div class="dashboard__item">
+								<div class="dashboard__row">
+									<p>Rule Score</p>
+									<img src="img/icons/activity.svg" alt="activity">
+								</div>
+								<h4>94</h4>
+								<span>+5</span>
+							</div>
+							<div class="dashboard__item">
+								<div class="dashboard__row">
+									<p>Trades</p>
+									<img src="img/icons/calendar.svg" alt="calendar">
+								</div>
+								<h4>12</h4>
+								<span>Today</span>
+							</div>
+						</div>
+						<div class="dashboard__center">
+							<h4>Portfolio Performance</h4>
+							<p>Last 30 days</p>
+							<div class="dashboard__lines">
+								<div class="dashboard__schedule">
+									<img class="dashboard__desk" src="img/lines-desk.svg" alt="schedule">
+									<img class="dashboard__mob" src="img/lines-mob.svg" alt="schedule">
+								</div>
+								<div class="dashboard__line">
+									<p>$58k</p>
+									<span></span>
+								</div>
+								<div class="dashboard__line">
+									<p>$48k</p>
+									<span></span>
+								</div>
+								<div class="dashboard__line">
+									<p>$38k</p>
+									<span></span>
+								</div>
+								<div class="dashboard__line">
+									<p>$28k</p>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="dashboard__bottom">
+							<div class="dashboard__card">
+								<div class="dashboard__name">
+									<h4>Recent Trades</h4>
+									<img src="img/icons/arrow-right.svg" alt="arrow-right">
+								</div>
+								<div class="dashboard__info">
+									<div class="dashboard__chart">
+										<p>APPL</p>
+										<span>LONG</span>
+									</div>
+									<span>+$342</span>
+								</div>
+								<div class="dashboard__info">
+									<div class="dashboard__chart dashboard__chart--red">
+										<p>GOOG</p>
+										<span>SHORT</span>
+									</div>
+									<span>-$128</span>
+								</div>
+								<div class="dashboard__info">
+									<div class="dashboard__chart">
+										<p>NVDA</p>
+										<span>LONG</span>
+									</div>
+									<span>+$567</span>
+								</div>
+								<div class="dashboard__info">
+									<div class="dashboard__chart">
+										<p>SPY</p>
+										<span>LONG</span>
+									</div>
+									<span>+$89</span>
+								</div>
+							</div>
+							<div class="dashboard__card">
+								<div class="dashboard__name">
+									<h4>Rule Compliance</h4>
+									<span>94%</span>
+								</div>
+								<div class="dashboard__info">
+									<div class="dashboard__chart">
+										<img src="img/icons/check.svg" alt="check">
+										<p>Max position size</p>
+									</div>
+									<p>Within limits</p>
+								</div>
+								<div class="dashboard__info">
+									<div class="dashboard__chart">
+										<img src="img/icons/check.svg" alt="check">
+										<p>Daily loss limit</p>
+									</div>
+									<p>$247 / $580</p>
+								</div>
+								<div class="dashboard__info">
+									<div class="dashboard__chart">
+										<img src="img/icons/tick.svg" alt="tick">
+										<p>Pre-market trading</p>
+									</div>
+									<p>1 trade flagged</p>
+								</div>
+								<div class="dashboard__info">
+									<div class="dashboard__chart">
+										<img src="img/icons/check.svg" alt="check">
+										<p>Stop loss required</p>
+									</div>
+									<p>All trades</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="dashboard__labels">
+						<div class="dashboard__label">
+							<div class="dashboard__icon">
+								<img src="img/icons/zap.svg" alt="zap">
+							</div>
+							<div class="dashboard__content">
+								<h4>Real-time P&L</h4>
+								<p>Track performance instantly</p>
+							</div>
+						</div>
+						<div class="dashboard__label">
+							<div class="dashboard__icon">
+								<img src="img/icons/trending-up.svg" alt="trending-up">
+							</div>
+							<div class="dashboard__content">
+								<h4>Visual Analytics</h4>
+								<p>Understand your patterns</p>
+							</div>
+						</div>
+						<div class="dashboard__label">
+							<div class="dashboard__icon">
+								<img src="img/icons/shield.svg" alt="shield">
+							</div>
+							<div class="dashboard__content">
+								<h4>Rule Compliance</h4>
+								<p>Stay disciplined</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="experience">
+				<div class="experience__container">
+					<div class="experience__bg">
+						<svg viewBox="0 0 1216 539" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.35" fill-rule="evenodd" clip-rule="evenodd" d="M1214 34.6973C1196.88 -14.911 1029.96 -10.8377 841.172 43.7959C778.417 61.9564 721.144 83.4177 673.272 105.801C583.292 147.871 452.275 185.316 353.852 198.704C318.787 203.474 282.039 211.841 245.01 223.984C81.2505 277.686 -25.9898 384.901 5.48207 463.456C36.954 542.01 195.221 562.157 358.98 508.456C522.739 454.754 629.98 347.538 598.508 268.984C597.787 267.184 599.204 265.194 601.132 265.395C670.507 272.655 782.35 258.4 903.147 223.443C1091.94 168.81 1231.11 84.3058 1214 34.6973Z" fill="url(#paint0_linear_59_859)" />
+							<defs>
+								<linearGradient id="paint0_linear_59_859" x1="1044.12" y1="-18.6367" x2="214.259" y2="497.743" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#147CEF" />
+									<stop offset="1" stop-color="#F53B00" />
+								</linearGradient>
+							</defs>
+						</svg>
+					</div>
+					<div class="experience__box">
+						<h2 class="title">Experience real
+							trading accountability</h2>
+						<div class="experience__text">
+							<p>Your rules define the structure, but your behavior defines the outcome. NEXAI makes every
+								decision
+								visible so you can stay consistent and in control.</p>
+						</div>
+						<div class="hero__buttons">
+							<button type='button' class="button button--join">Join Waitlist<img src="img/icons/join.svg" alt="join"></button>
+							<button type='button' class="button button--more">Learn More<img src="img/icons/more.svg" alt="more"></button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__top"></div>
+			<div class="footer__container">
+				<div class="footer__left">
+					<a href='/' class='footer__logo'><img src='img/logo.webp' alt='logo'></a>
+					<a class="footer__mail" href="mailto:nexai@mail.com"><img src="img/icons/mail.svg" alt="mail">nexai@mail.com</a>
+				</div>
+				<div class="footer__right">
+					<nav>
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="dashboard.html">Dashboard</a></li>
+						</ul>
+					</nav>
+					<nav>
+						<ul>
+							<li><a href="#">Terms and Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li>
+								<p>Copyright © 2026</p>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__bg">
+					<svg viewBox="0 0 540 701" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5" filter="url(#filter0_f_57_4505)">
+							<ellipse cx="349.16" cy="129.325" rx="267.696" ry="154.504" transform="rotate(19.8969 349.16 129.325)" fill="#147CEF" />
+						</g>
+						<defs>
+							<filter id="filter0_f_57_4505" x="-308.042" y="-442.181" width="1314.4" height="1143.01" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix" />
+								<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+								<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_57_4505" />
+							</filter>
+						</defs>
+					</svg>
+				</div>
+				<button data-close type="button" class="popup__close">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.1" filter="url(#filter0_d_57_4400)">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M35.8523 14.4325C36.0476 14.6278 36.0476 14.9445 35.8523 15.1397L27.3448 23.6455C27.1495 23.8407 27.1495 24.1573 27.3448 24.3526L35.8534 32.8603C36.0486 33.0556 36.0487 33.3722 35.8534 33.5674L33.5673 35.8535C33.3721 36.0488 33.0555 36.0488 32.8602 35.8535L24.3515 27.3457C24.1563 27.1505 23.8397 27.1505 23.6444 27.3457L15.1396 35.8505C14.9443 36.0458 14.6278 36.0458 14.4325 35.8505L12.1464 33.5645C11.9512 33.3692 11.9512 33.0526 12.1464 32.8574L20.6512 24.3526C20.8465 24.1573 20.8465 23.8407 20.6512 23.6455L12.1475 15.1426C11.9522 14.9474 11.9522 14.6308 12.1474 14.4355L14.4335 12.1494C14.6288 11.9542 14.9453 11.9542 15.1406 12.1494L23.6444 20.6524C23.8397 20.8476 24.1562 20.8476 24.3515 20.6524L32.8583 12.1464C33.0536 11.9512 33.3701 11.9512 33.5654 12.1464L35.8523 14.4325Z" fill="#F4FFF7" />
+						</g>
+						<defs>
+							<filter id="filter0_d_57_4400" x="0" y="0" width="48" height="47.9999" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix" />
+								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+								<feOffset />
+								<feGaussianBlur stdDeviation="6" />
+								<feComposite in2="hardAlpha" operator="out" />
+								<feColorMatrix type="matrix" values="0 0 0 0 0.945098 0 0 0 0 0.117647 0 0 0 0 0.156863 0 0 0 0.25 0" />
+								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_57_4400" />
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_57_4400" result="shape" />
+							</filter>
+						</defs>
+					</svg>
+				</button>
+				<div class="popup__text">
+					<div class="popup__box">
+						<h2 class="page-title">Join Waitlist</h2>
+						<span>Get early access to a system built to enforce discipline and track your trading behavior in real
+							time.</span>
+						<p>Join the waitlist now and get a limited discount code before the launch!</p>
+					</div>
+					<form action="files/sendmail/sendmail.php" data-dev data-popup-message="#form-message" enctype="multipart/form-data" class="form" method="POST">
+						<input type="hidden" name="form_subject" value="theme">
+						<label class="form-label">
+							<span>Name *</span>
+							<input type="text" data-required name="name" id="name" autocomplete="off" maxlength="255" data-error="Error" placeholder="Write your name" class="input">
+						</label>
+						<label class="form-label">
+							<span>Email *</span>
+							<input type="email" data-required name="email" id="email" autocomplete="off" maxlength="255" data-error="Error" placeholder="Write your email" class="input">
+						</label>
+						<label class="form-label form-label-select">
+							<span>What platform do you trade on? *</span>
+							<select name="form[]" data-class-modif="form" data-required data-error="Error">
+								<option value="" selected>Click to select platform</option>
+								<option value="Ninja Trader">Ninja Trader</option>
+								<option value="Tradovate">Tradovate</option>
+								<option value="Project X">Project X</option>
+								<option value="TradeSea">TradeSea</option>
+								<option value="MetaTrader">MetaTrader</option>
+								<option value="Other">Other</option>
+							</select>
+						</label>
+						<button type='submit' class="button button--join" disabled>Join
+							Waitlist
+							<img src="img/icons/join.svg" alt="join"></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="form-message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__bg">
+					<svg viewBox="0 0 540 701" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5" filter="url(#filter0_f_57_4505)">
+							<ellipse cx="349.16" cy="129.325" rx="267.696" ry="154.504" transform="rotate(19.8969 349.16 129.325)" fill="#147CEF" />
+						</g>
+						<defs>
+							<filter id="filter0_f_57_4505" x="-308.042" y="-442.181" width="1314.4" height="1143.01" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix" />
+								<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+								<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_57_4505" />
+							</filter>
+						</defs>
+					</svg>
+				</div>
+				<button data-close type="button" class="popup__close">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.1" filter="url(#filter0_d_57_4400)">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M35.8523 14.4325C36.0476 14.6278 36.0476 14.9445 35.8523 15.1397L27.3448 23.6455C27.1495 23.8407 27.1495 24.1573 27.3448 24.3526L35.8534 32.8603C36.0486 33.0556 36.0487 33.3722 35.8534 33.5674L33.5673 35.8535C33.3721 36.0488 33.0555 36.0488 32.8602 35.8535L24.3515 27.3457C24.1563 27.1505 23.8397 27.1505 23.6444 27.3457L15.1396 35.8505C14.9443 36.0458 14.6278 36.0458 14.4325 35.8505L12.1464 33.5645C11.9512 33.3692 11.9512 33.0526 12.1464 32.8574L20.6512 24.3526C20.8465 24.1573 20.8465 23.8407 20.6512 23.6455L12.1475 15.1426C11.9522 14.9474 11.9522 14.6308 12.1474 14.4355L14.4335 12.1494C14.6288 11.9542 14.9453 11.9542 15.1406 12.1494L23.6444 20.6524C23.8397 20.8476 24.1562 20.8476 24.3515 20.6524L32.8583 12.1464C33.0536 11.9512 33.3701 11.9512 33.5654 12.1464L35.8523 14.4325Z" fill="#F4FFF7" />
+						</g>
+						<defs>
+							<filter id="filter0_d_57_4400" x="0" y="0" width="48" height="47.9999" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix" />
+								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+								<feOffset />
+								<feGaussianBlur stdDeviation="6" />
+								<feComposite in2="hardAlpha" operator="out" />
+								<feColorMatrix type="matrix" values="0 0 0 0 0.945098 0 0 0 0 0.117647 0 0 0 0 0.156863 0 0 0 0.25 0" />
+								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_57_4400" />
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_57_4400" result="shape" />
+							</filter>
+						</defs>
+					</svg>
+				</button>
+				<div class="popup__text">
+					<div class="popup__box">
+						<h2 class="page-title">Join Waitlist</h2>
+						<div class="popup__thanks">
+							<img src="img/Union.svg" alt="union">
+							<p>Welcome, <span class="user-name">[Name or email]</span>. <br>
+								You’ve been added to the waitlist.</p>
+							<p>We’ll notify you when
+								NEXAI is ready for access.</p>
+							<a href="/">Back to Home Page</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20260516213916"></script>
+</body>
+
+</html>
