@@ -719,11 +719,13 @@ body::after {
 }
 .header {
   position: relative;
-  z-index: 50
+  z-index: 50;
+  width: 100%;
+  position: fixed
 }
 .header__box {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   box-shadow: 0 56px 112px 0 rgba(0,0,0,.1);
   background: linear-gradient(148deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.04) 100%);
   border-radius: 1.625rem;
@@ -1077,16 +1079,16 @@ body::after {
   aspect-ratio: 300/112;
   position: relative;
   z-index: 2;
-  -webkit-filter: blur(1px);
-  filter: blur(1px)
+  -webkit-filter: blur(.3px);
+  filter: blur(.3px)
 }
 .real__bottom picture img,
 .real__bottom picture source {
   aspect-ratio: 300/112;
   position: relative;
   z-index: 2;
-  -webkit-filter: blur(1px);
-  filter: blur(1px)
+  -webkit-filter: blur(.3px);
+  filter: blur(.3px)
 }
 .real__bottom p {
   width: 100%;
@@ -2515,7 +2517,7 @@ button.swiper-pagination-bullet {
     padding-bottom: 3.125rem
   }
   .hero {
-    padding-top: 3.125rem
+    padding-top: 9.375rem
   }
   .hero {
     padding-bottom: 6.875rem
@@ -2612,13 +2614,13 @@ button.swiper-pagination-bullet {
     margin-bottom: 3.125rem
   }
   .about {
-    padding-top: 3.125rem
+    padding-top: 9.375rem
   }
   .about__text {
     font-size: 1.25rem
   }
   .dashboard {
-    padding-top: 3.125rem
+    padding-top: 9.375rem
   }
   .dashboard__container h4 {
     font-size: 1.5rem
@@ -2755,7 +2757,7 @@ button.swiper-pagination-bullet {
     padding-bottom: 1.25rem
   }
   .hero {
-    padding-top: 2.5rem
+    padding-top: 8.75rem
   }
   .hero {
     padding-bottom: 3.125rem
@@ -2852,13 +2854,13 @@ button.swiper-pagination-bullet {
     margin-bottom: 1.25rem
   }
   .about {
-    padding-top: 2.5rem
+    padding-top: 8.75rem
   }
   .about__text {
     font-size: 1rem
   }
   .dashboard {
-    padding-top: 2.5rem
+    padding-top: 8.75rem
   }
   .dashboard__container h4 {
     font-size: 1.25rem
@@ -3034,11 +3036,9 @@ button.swiper-pagination-bullet {
     gap: 1rem;
     padding: .75rem
   }
-  .header__box {
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none
-  }
   .menu-open .header__box {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border: none;
@@ -3286,7 +3286,7 @@ button.swiper-pagination-bullet {
     padding-bottom: clamp(1.25rem ,.6674757282rem + 2.9126213592vw ,3.125rem)
   }
   .hero {
-    padding-top: clamp(2.5rem ,2.3058252427rem + .9708737864vw ,3.125rem)
+    padding-top: clamp(8.75rem ,8.5558252427rem + .9708737864vw ,9.375rem)
   }
   .hero {
     padding-bottom: clamp(3.125rem ,1.9599514563rem + 5.8252427184vw ,6.875rem)
@@ -3383,13 +3383,13 @@ button.swiper-pagination-bullet {
     margin-bottom: clamp(1.25rem ,.6674757282rem + 2.9126213592vw ,3.125rem)
   }
   .about {
-    padding-top: clamp(2.5rem ,2.3058252427rem + .9708737864vw ,3.125rem)
+    padding-top: clamp(8.75rem ,8.5558252427rem + .9708737864vw ,9.375rem)
   }
   .about__text {
     font-size: clamp(1rem ,.9223300971rem + .3883495146vw ,1.25rem)
   }
   .dashboard {
-    padding-top: clamp(2.5rem ,2.3058252427rem + .9708737864vw ,3.125rem)
+    padding-top: clamp(8.75rem ,8.5558252427rem + .9708737864vw ,9.375rem)
   }
   .dashboard__container h4 {
     font-size: clamp(1.25rem ,1.1723300971rem + .3883495146vw ,1.5rem)
